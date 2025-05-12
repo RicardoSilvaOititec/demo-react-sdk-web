@@ -14,20 +14,12 @@ const nextConfig: NextConfig = {
       new CopyPlugin({
         patterns: [
           {
-            from: './node_modules/@oiti/facetec-sdk/core-sdk/FaceTec_images',
-            to: './static/chunks/facetec/FaceTec_images',
-          },
-          {
-            from: './node_modules/@oiti/facetec-sdk/core-sdk/FaceTecSDK.js/resources',
-            to: './static/chunks/facetec/resources',
-          },
-          {
-            from: './node_modules/@oiti/facetec-sdk/app-resources',
-            to: './static/chunks/facetec/app-resources',
+            from: './node_modules/@oiti/facetec-sdk',
+            to: './static/chunks/facetec-sdk',
           },
           {
             from: './node_modules/@oiti/sdk-web/dist/src/shared/public',
-            to: 'public/',
+            to: './static/chunks/public/',
           },
         ],
       })
